@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 import App from "./App.tsx";
 import "./index.css";
@@ -9,7 +9,7 @@ import { Navigation } from "./components/Navigation/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
 import { aboutPath, rootPath } from "./components/Navigation/routes.ts";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: `/${rootPath}`,
     element: <App />,
