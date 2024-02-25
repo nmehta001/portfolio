@@ -7,14 +7,15 @@ import "./index.css";
 import { About } from "./Pages/About";
 import { Navigation } from "./components/Navigation/index.tsx";
 import { Footer } from "./components/Footer/index.tsx";
+import { aboutPath, rootPath } from "./components/Navigation/routes.ts";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio",
+    path: `/${rootPath}`,
     element: <App />,
   },
   {
-    path: "/portfolio/about",
+    path: `/${aboutPath}`,
     element: <About />,
   },
   {},
