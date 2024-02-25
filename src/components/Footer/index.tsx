@@ -25,8 +25,6 @@ export const Footer = () => {
     },
   ];
 
-  console.log(import.meta.env);
-
   return (
     <div className="flex flex-col lg:flex-row m-10 justify-between items-center ">
       <div className="flex">

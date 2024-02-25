@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { aboutPath, projectsPath, rootPath } from "./routes";
 
 export const Links = () => {
@@ -9,7 +10,7 @@ export const Links = () => {
 
   return links.map(({ name, url }) => (
     <li className="mr-10">
-      <a href={url} className="hover:text-[#27B8FA]">
+      <Link to={url} className="hover:text-[#27B8FA]">
         <span
           className="pb-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-[#27B8FA]
@@ -18,7 +19,8 @@ export const Links = () => {
         >
           {name}
         </span>
-      </a>
+      </Link>
+      
     </li>
   ));
 };
