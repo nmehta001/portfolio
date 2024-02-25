@@ -10,11 +10,11 @@ import { Footer } from "./components/Footer/index.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio",
     element: <App />,
   },
   {
-    path: "/about",
+    path: "/portfolio/about",
     element: <About />,
   },
   {},
