@@ -39,10 +39,12 @@ export const About = (): JSX.Element => {
   ];
 
   return (
-    <div className="relative mb-[10rem] xl:mb-[15rem] mt-[15rem] xl:mt-[20rem]">
-      <div className="w-3/5 h-2/5 rounded-bl-full rounded-br-full bg-white absolute left-0 right-0 -top-[10rem] mx-auto " />
+    <div className="relative mb-[10rem] xl:mb-[15rem] mt-[5rem] lg:mt-[15rem] xl:mt-[20rem]">
+      <div className="w-4/5 h-[600px] rounded-bl-full rounded-br-full bg-white absolute left-0 right-0 -top-[29rem] lg:-top-[25.8rem] mx-auto -z-0 " />
+      <div className="w-1/5 h-1/5 rounded-tl-full rounded-tr-full bg-[#FF83EC] absolute -left-[1.5rem] lg:-left-[3.5rem] -top-[2rem] lg:-top-[11.3rem] mx-auto -rotate-[19deg] lg:-rotate-[39deg]" />
+      <div className="w-1/5 h-1/5 rounded-tl-full rounded-tr-full bg-[#FF83EC] absolute -right-[1.5rem] lg:-right-[3.5rem] -top-[2rem] lg:-top-[11.3rem] mx-auto rotate-[19deg] lg:rotate-[39deg]" />
 
-      <div className="bg-[#FF83EC] text-[#fff]">
+      <div className="bg-[#FF83EC] text-[#fff] px-5 lg:px-10 pt-60">
         <div className="flex flex-col items-center justify-center">
           <h1 className="uppercase text-2xl lg:text-5xl text-center">
             Welcome to my world of
@@ -74,7 +76,7 @@ export const About = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className="w-[200%] h-[120%] rounded-bl-full rounded-br-full bg-[#FF83EC] absolute -left-[50%] xl:-bottom-[16rem] -z-10" />
+      <div className="w-[200%] h-[120%] rounded-bl-full rounded-br-full bg-[#FF83EC] absolute -left-[50%] -bottom-[10rem] xl:-bottom-[16rem] -z-10" />
     </div>
   );
 };
