@@ -1,13 +1,31 @@
 import { Typewriter } from "@/components/TypeWriter";
 import logoPng from "/logo.png";
 
-import Wave from "../../assets/wave.svg?react";
+import projectJpg from "/project.jpg";
 
 export const Home = () => {
+  const projects = [
+    {
+      imageSrc: projectJpg,
+      name: "s/hero magazine",
+      link: "",
+    },
+    {
+      imageSrc: projectJpg,
+      name: "kintsugi quilt",
+      link: "",
+    },
+    {
+      imageSrc: projectJpg,
+      name: "if i should have a daughter animation",
+      link: "",
+    },
+  ];
+
   return (
     <>
-      <div className="m-auto">
-        <div className="flex flex-col justify-center items-center">
+      <div className="mx-auto">
+        <div className="flex flex-col justify-center items-center mt-[4rem]">
           <div className="self-start flex">
             <p>hello</p>&nbsp;
             <Typewriter text={"i'm"} speed={250} />
@@ -18,46 +36,22 @@ export const Home = () => {
           />
           <Typewriter
             className="self-end"
-            text="it's a pleasure to meet you"
+            text="welcome to my world of colour + play"
             speed={300}
           />
         </div>
-      </div>
-      <div className="h-screen relative mt-[15rem]">
-        <Wave className="absolute -top-[200px] left-0 right-0 mx-auto" />
-        <div className="flex flex-col lg:flex-row items-center lg:justify-around w-full mt-[5rem] text-white">
-          <p className="z-10 text-[#fff] lg:text-[#FF83EC]">
-            i design for emotion;
-            <br /> taking the time to understand who and what i'm designing for.
-            <br />
-            what matters most to me are people.
-          </p>
-          <p className="self-end mt-[2rem] lg:mt-0 text-[#FF83EC]">
-            so,
-            <br />
-            <br /> take a minute,
-            <br /> breathe.
-            <br /> check in with yourself.
-          </p>
+
+        <div className="flex flex-col mt-[20rem]">
+          <p className="text-3xl font-black">let's explore</p>
+          <div className="flex flex-row justify-between mt-4">
+            {projects.map((project) => (
+              <div className="flex flex-col">
+                <img width="320px" height="240px" src={project.imageSrc} />
+                <p className="mt-2">{project.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col lg:flex-row items-center lg:justify-around w-full text-white">
-        <p className="text-[#FF83EC]">
-          when you choose to work with me,
-          <br />
-          you work with a friend not a colleague.
-        </p>
-        <p className="text-[#fff] lg:text-[#FF83EC]">
-          i care about who you are,
-          <br />
-          how you feel
-          <br />
-          what you're about
-        </p>
-        <Wave className="absolute left-0 right-0 mx-auto" />
-      </div>
-      <div className="flex items-center justify-center mt-[15rem] mb-[2.5rem] lg:mt-[30rem] lg:mb-[5rem]">
-        <h1 className="text-4xl lg:text-7xl">so let's explore</h1>
       </div>
     </>
   );

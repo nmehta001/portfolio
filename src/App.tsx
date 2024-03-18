@@ -6,10 +6,9 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col w-full overflow-hidden">
+    <div className="min-h-screen flex flex-col w-full overflow-hidden justify-between">
       <Navigation />
       <Outlet />
-
       <Footer />
     </div>
   );
