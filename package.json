@@ -2,15 +2,15 @@
   "name": "portfolio",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "homepage": "https://nmehta001.github.io/portfolio/",
+  "type": "module",
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "prepare": "husky",
+    "preview": "vite preview",
     "test": ""
   },
   "dependencies": {
@@ -45,5 +45,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-svgr": "^4.2.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

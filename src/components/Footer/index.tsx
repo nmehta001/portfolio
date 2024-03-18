@@ -26,12 +26,12 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row m-10 justify-between items-center ">
+    <div className="flex flex-col lg:flex-row p-10 justify-between items-center bg-[#FF83EC] text-white relative">
       <div className="flex">
         {icons.map(({ externalUrl, Icon, changeStroke }) => (
           <a href={externalUrl} target="_blank">
             <Icon
-              className={`h-[50px] w-[50px] ${!changeStroke ? "fill-[#FF83EC]" : "fill-none stroke-[#FF83EC]"} ml-3`}
+              className={`h-[50px] w-[50px] ${!changeStroke ? "fill-[#FFF]" : "fill-none stroke-[#FFF]"} ml-3`}
             />
           </a>
         ))}
