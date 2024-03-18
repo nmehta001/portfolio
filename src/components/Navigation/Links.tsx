@@ -5,7 +5,7 @@ export const Links = () => {
   const links = [
     { name: "home", url: `/${rootPath}` },
     { name: "about", url: `/${aboutPath}` },
-    { name: "projects", url: `/${projectsPath}` },
+    { name: "projects", url: `/${projectsPath}/1` },
   ];
 
   return links.map(({ name, url }) => (
@@ -20,7 +20,6 @@ export const Links = () => {
           {name}
         </span>
       </Link>
-      
     </li>
   ));
 };
