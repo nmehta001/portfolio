@@ -5,8 +5,13 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
 import { About } from "./Pages/About";
-import { aboutPath, rootPath } from "./components/Navigation/routes.ts";
-import { Home } from "./Pages/Home/index.ts";
+import { Home } from "./Pages/Home";
+import { Project } from "./Pages/Projects";
+import {
+  aboutPath,
+  projectsPath,
+  rootPath,
+} from "./components/Navigation/routes.ts";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: `/${aboutPath}`,
         element: <About />,
+      },
+      {
+        path: `/${projectsPath}/:id`,
+        element: <Project />,
       },
     ],
   },
