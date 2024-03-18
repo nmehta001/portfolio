@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 3.00195 8 3.998" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 4 5 C 5.3333 5.6667 6.6667 6.3333 8 7 A 5 5 90 0 0 0 7 A 1.42 1.42 0 0 1 8 7" fill="currentColor"/>
+  <rect x="-0.018" y="2.995" width="8.021" height="1.99" style="paint-order: fill;" fill="currentColor"/>
+  <rect x="7.98" y="4.319" width="1.236" height="2.662" style="transform-origin: 8.598px 5.65px;" transform="matrix(0.913545131683, -0.406737059355, 0.406737059355, 0.913545131683, -0.536560582376, -0.040756723589)" fill="currentColor"/>
+  <rect x="7.98" y="4.319" width="1.236" height="2.662" style="transform-origin: 8.598px 5.65px;" transform="matrix(0.913546144962, 0.406736016273, -0.406736016273, 0.913546144962, -8.646602837488, -0.054488814376)" fill="currentColor"/>
+</svg>
