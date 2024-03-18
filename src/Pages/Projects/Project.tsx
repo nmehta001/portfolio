@@ -25,6 +25,9 @@ export const Project = () => {
         content:
           "s/hero embodies all the qualities of a strong woman. created to appeal to graphic design students, she takes standing out from the crowd to a whole new level. her cover design reflects the forward thinking associated with the movement and her article spreads embody their subject matters. s/hero is a beautiful typographic magazine which kickstarted my journey with feminism.",
       },
+      sectionThree: {
+        colors: ["E6ADAF", "CD1719", "028581"],
+      },
     },
     {
       id: 2,
@@ -74,31 +77,31 @@ export const Project = () => {
 
   return (
     <div className="flex flex-col mx-20">
-      <h1 className="text-[7rem] mb-[15rem]">{project?.sectionOne.title}</h1>
-      <div className="flex flex-row justify-between relative mb-[15rem]">
+      <h1 className="text-[3rem] lg:text-[7rem] mb-[5rem] lg:mb-[15rem]">{project?.sectionOne.title}</h1>
+      <div className="flex flex-col lg:flex-row justify-between relative lg:mb-[15rem]">
         <div className="flex flex-col ">
           {project?.sectionOne.subTitle.map((sub, index) => (
-            <p className="text-[4rem]">
+            <p className="text-[2rem] lg:text-[4rem]">
               {sub}
               {index !== project.sectionOne.subTitle.length - 1 ? "," : ""}
             </p>
           ))}
         </div>
-        <div className="flex flex-row -right-[12rem] absolute">
+        <div className="flex flex-col lg:flex-row lg:-right-[12rem] lg:absolute mt-[2rem] lg:mt-0">
           {project?.sectionOne.images.map((image) => (
-            <img src={image} width="240px" className="mr-10" />
+            <img src={image} width="240px" className="mb-10 lg:mb-0 lg:mr-10" />
           ))}
         </div>
       </div>
-      <div className="flex flex-row relative w-full justify-between">
-        <div className="flex flex-row -left-[10rem] absolute">
+      <div className="flex flex-col lg:flex-row relative w-full justify-between">
+        <div className="lg:flex lg:flex-row lg:-left-[10rem] lg:absolute">
           {project?.sectionTwo.images.map((image) => (
-            <img src={image} width="480px" className="mr-10" />
+            <img src={image} width="480px" className="mb-10 lg:mb-0 lg:mr-10" />
           ))}
         </div>
-        <div className="w-1/3"/>
-        <div className="w-1/3"/>
-        <div className="flex flex-col w-1/3 ml-[5rem]">
+        <div className="lg:w-1/3" />
+        <div className="lg: w-1/3" />
+        <div className="flex flex-col lg:w-1/3 lg:ml-[5rem] mb-10 lg:mb-[15rem]">
           <div className="block mb-4 ">
             <p>year: </p>
             <p>{project?.sectionTwo.year}</p>
@@ -107,7 +110,7 @@ export const Project = () => {
             <p>deliverable: </p>
             <p>{project?.sectionTwo.deliverable}</p>
           </div>
-            <p className="text-sm">{project?.sectionTwo.content}</p>
+          <p className="text-sm">{project?.sectionTwo.content}</p>
         </div>
       </div>
     </div>
