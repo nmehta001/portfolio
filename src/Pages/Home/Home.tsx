@@ -1,36 +1,8 @@
 import { Typewriter } from "@/components/TypeWriter";
 import logoPng from "/logo.png";
-
-import projectJpg from "/project.jpg";
-import { kintsugiSix, reflectionFive, sheroFive } from "@/components/Images";
-import { Link } from "react-router-dom";
-import { projectsPath } from "@/components/Navigation/routes";
 import { ProjectCarousel } from "../Projects/ProjectCarousel";
 
 export const Home = () => {
-  const projects = [
-    {
-      imageSrc: sheroFive,
-      name: "s/hero magazine",
-      link: `${projectsPath}/1`,
-    },
-    {
-      imageSrc: kintsugiSix,
-      name: "kintsugi quilt",
-      link: `${projectsPath}/2`,
-    },
-    {
-      imageSrc: projectJpg,
-      name: "if i should have a daughter animation",
-      link: `${projectsPath}/3`,
-    },
-    {
-      imageSrc: reflectionFive,
-      name: "if i should have a daughter animation",
-      link: `${projectsPath}/4`,
-    },
-  ];
-
   return (
     <>
       <div className="mx-auto">
