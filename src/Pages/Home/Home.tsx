@@ -2,23 +2,32 @@ import { Typewriter } from "@/components/TypeWriter";
 import logoPng from "/logo.png";
 
 import projectJpg from "/project.jpg";
+import { kintsugiSix, reflectionFive, sheroFive } from "@/components/Images";
+import { Link } from "react-router-dom";
+import { projectsPath } from "@/components/Navigation/routes";
+import { ProjectCarousel } from "../Projects/ProjectCarousel";
 
 export const Home = () => {
   const projects = [
     {
-      imageSrc: projectJpg,
+      imageSrc: sheroFive,
       name: "s/hero magazine",
-      link: "",
+      link: `${projectsPath}/1`,
     },
     {
-      imageSrc: projectJpg,
+      imageSrc: kintsugiSix,
       name: "kintsugi quilt",
-      link: "",
+      link: `${projectsPath}/2`,
     },
     {
       imageSrc: projectJpg,
       name: "if i should have a daughter animation",
-      link: "",
+      link: `${projectsPath}/3`,
+    },
+    {
+      imageSrc: reflectionFive,
+      name: "if i should have a daughter animation",
+      link: `${projectsPath}/4`,
     },
   ];
 
@@ -41,16 +50,8 @@ export const Home = () => {
           />
         </div>
 
-        <div className="flex flex-col mt-[20rem]">
-          <p className="text-3xl font-black">let's explore</p>
-          <div className="flex flex-row justify-between mt-4">
-            {projects.map((project) => (
-              <div className="flex flex-col">
-                <img width="320px" height="240px" src={project.imageSrc} />
-                <p className="mt-2">{project.name}</p>
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-col mt-[5rem] lg:mt-[20rem]">
+          <ProjectCarousel currentProjectId={0} title="let's explore" />
         </div>
       </div>
     </>
