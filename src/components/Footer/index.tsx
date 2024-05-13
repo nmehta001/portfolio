@@ -17,7 +17,11 @@ export const Footer = () => {
       Icon: InstagramLogo,
       changeStroke: false,
     },
-    { externalUrl: "", Icon: BehanceLogo, changeStroke: false },
+    {
+      externalUrl: "https://www.behance.net/lauracastelo1",
+      Icon: BehanceLogo,
+      changeStroke: false,
+    },
     {
       externalUrl: "mailto:lauracastelo1994@gmail.com",
       Icon: AtLogo,
